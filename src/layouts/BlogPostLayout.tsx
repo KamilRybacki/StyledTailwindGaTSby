@@ -3,7 +3,7 @@ import React from 'react';
 import {Link, graphql, StaticQuery} from 'gatsby';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
 
-import {PostsThumbnailQuery, Edge} from '@src/graphql-types'
+import {PostsThumbnailQuery, Edge} from '@src/graphql-types';
 
 type BlogPostLayoutProps = {
     pageContext: object
