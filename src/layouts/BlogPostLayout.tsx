@@ -3,14 +3,14 @@ import React from 'react';
 import {Link, graphql, StaticQuery} from 'gatsby';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
 
-import {PostsThumbnailQuery, EdgesQuery} from '@src/graphql-types'
+import {PostsThumbnailQuery, Edge} from '@src/graphql-types'
 
 type BlogPostLayoutProps = {
     pageContext: object
 }
 
 const BlogPostLayout: React.FunctionComponent<BlogPostLayoutProps> = ({pageContext: context}) => {
-  const postsThumbnailsQuer = graphql`
+  const postsThumbnailsQuery = graphql`
             query PostsThumbnail {
                 allFile(filter: {relativePath: {regex: "/thumbnails/posts/"}}) {
                     edges {
