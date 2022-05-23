@@ -10,6 +10,10 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+        // Your aliases can also go here!!!
+    }
   },
   "include": ["./src/**/*.ts", "./src/**/*.tsx"],
   "exclude": []

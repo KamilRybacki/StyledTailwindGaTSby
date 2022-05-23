@@ -13,10 +13,8 @@ module.exports.createPages = async ({graphql, actions, reporter}) => {
                         date(formatString: "MM/DD/YYYY")
                         title
                         tags
-                        thumbnail
                     }
                     slug
-                    timeToRead
                     body
                 }
             }
